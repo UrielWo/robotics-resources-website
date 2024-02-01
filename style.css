@@ -1,0 +1,106 @@
+/* 
+Theme name: Robotics resources
+Author: Uriel
+Version: 1.0
+*/
+#bottom-content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; /* Adjust as necessary for spacing */
+    color: white; /* This sets the text color to white for all text within #bottom-content */
+  }
+  
+  .column {
+    width: 50%;
+    /* Add padding or margins as necessary */
+  }
+  
+  /* Specific styles for the first column */
+  .column:first-child {
+    background-color: rgba(211, 211, 211, 0.5); /* Light gray with opacity */
+  }
+  
+  /* For responsive design, stack columns on smaller screens */
+  @media (max-width: 768px) {
+    #bottom-content {
+      flex-direction: column;
+    }
+    
+    .column {
+      width: 100%;
+    }
+  }
+  
+  /* Adjust link color to white as well */
+  #bottom-content a {
+    color: white;
+    text-decoration: none; /* Optional: removes underline from links */
+  }
+  
+  #bottom-content a:hover {
+    text-decoration: underline; /* Optional: adds underline on hover */
+  }
+  
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+    color: whitesmoke;
+     /* You can adjust this property to control how the image fits the element */
+    /* Other background properties like position and attachment can be added here if needed */
+}
+/* Resetting some basic styles */
+h1, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Calibri', sans-serif;
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: whitesmoke; 
+    padding: 20px;
+  }
+  
+  .logo img {
+    width: 100px; /* Set the desired width */
+    height: auto; /* Maintain the aspect ratio */
+}
+  
+  .center-content {
+    flex-grow: 2;
+    text-align: center;
+  }
+  
+  .links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+    
+    .logo, .center-content, .links {
+      flex-grow: 0;
+      margin: 10px 0; /* Adjust spacing for smaller screens */
+    }
+    
+    .links {
+      justify-content: center;
+    }
+  }
+  
